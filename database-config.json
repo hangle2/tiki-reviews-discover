@@ -1,7 +1,7 @@
 {
-  "user": "",
-  "password": "",
-  "host": "",
-  "database": "",
+  "user": "talaria_browser_ro",
+  "password": "gUoX5PqEtnRFSwHS",
+  "host": "vm-prod-talaria-proxycloudsql-0.svr.tiki.services",
+  "database": "talaria_review",
   "port": 3308
 }

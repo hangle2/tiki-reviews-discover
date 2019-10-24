@@ -1942,3 +1942,9 @@ yêu_cầu
 tiki
 giao_hàng
 ko
+hàng
+sản_phẩm
+mua
+máy
+mong
+giao
