@@ -1,4 +1,5 @@
 import re
+
 from pyvi import ViTokenizer
 
 
@@ -13,10 +14,10 @@ def get_stop_words(stopword_file_path):
 stop_words = get_stop_words("data/stopwords.txt")
 
 
-def pre_process(text):
+def pre_process(text, remove_stop_word=True):
     text = text.lower()
     text = re.sub("&lt;/?.*&gt;", " &lt;&gt; ", text)
     text = re.sub("(\\d|\\W)+", " ", text)
     text = ViTokenizer.tokenize(text)
-    tokens = [w for w in text.split(' ') if not w in stop_words]
+    tokens = [w for w in text.split(' ') if (not w in stop_words) or not remove_stop_word]
     return ' '.join(tokens)
