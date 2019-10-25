@@ -1,2 +1,6 @@
 .idea
 database-config.json
+
+__pycache__/
+
+.DS_Store
